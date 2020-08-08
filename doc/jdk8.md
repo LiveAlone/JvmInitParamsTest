@@ -14,9 +14,9 @@
     5. ```-XX:+PrintGCApplicationStoppedTime``` 打印出来 STW 时间
     6. ```-XX:+PrintTenuringDistribution``` 对象分布
   
-命令参数
+命令参数 注意jvm 版本
 ```
- -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintTenuringDistribution -Xloggc:/tmp/logs/gc_%p.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/logs -XX:ErrorFile=/tmp/logs/hs_error_pid%p.log -XX:-OmitStackTraceInFastThrow
+-XX:+UnlockExperimentalVMOptions -Xms16m -Xmx16m -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintTenuringDistribution -Xloggc:gc_%p.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heap.prof -XX:ErrorFile=hs_error_pid%p.log -XX:-OmitStackTraceInFastThrow
 ```
 
 * gc 内存
