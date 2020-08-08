@@ -22,5 +22,7 @@
 * gc 内存
 
     1. ```-XX:+HeapDumpOnOutOfMemoryError``` OOM dump jvm 内存配置
-    2. ```-XX:HeapDumpPath=heap.prof``` heap dump 文件路径
+    2. ```-XX:HeapDumpPath=heap.prof``` heap dump 文件路径, 输出内存结果
+    
+
    
