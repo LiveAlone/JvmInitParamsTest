@@ -8,5 +8,19 @@
 * gc 日志输出参数
 
     1. ```-verbose:gc``` 打印GC 日志
-    2. ```loggc``` gc 日志文件位置
-    3. ```PrintGCDetails``` 打印日志详情
+    2. ```-Xloggc:${gclogpath}``` gc 日志文件位置
+    3. ```-XX:+PrintGCDetails``` 打印日志详情
+    4. ```-XX:+PrintGCDateStamps``` 系统时间打印出来
+    5. ```-XX:+PrintGCApplicationStoppedTime``` 打印出来 STW 时间
+    6. ```-XX:+PrintTenuringDistribution``` 对象分布
+  
+命令参数
+```
+ -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintTenuringDistribution -Xloggc:/tmp/logs/gc_%p.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/logs -XX:ErrorFile=/tmp/logs/hs_error_pid%p.log -XX:-OmitStackTraceInFastThrow
+```
+
+* gc 内存
+
+    1. ```-XX:+HeapDumpOnOutOfMemoryError``` OOM dump jvm 内存配置
+    2. ```-XX:HeapDumpPath=heap.prof``` heap dump 文件路径
+   
