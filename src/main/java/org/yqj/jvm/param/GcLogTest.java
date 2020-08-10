@@ -1,4 +1,4 @@
-package org.yqj.jvm.param.jdk8;
+package org.yqj.jvm.param;
 
 /**
  * Description:

@@ -16,7 +16,7 @@
   
 命令参数 注意jvm 版本
 ```
--XX:+UnlockExperimentalVMOptions -Xms16m -Xmx16m -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintTenuringDistribution -Xloggc:gc_%p.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heap.prof -XX:ErrorFile=hs_error_pid%p.log -XX:-OmitStackTraceInFastThrow
+-XX:+UnlockExperimentalVMOptions -Xms16m -Xmx16m -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintTenuringDistribution -Xloggc:gc_%p.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=log/ -XX:ErrorFile=hs_error_pid%p.log -XX:-OmitStackTraceInFastThrow
 ```
 
 * gc 内存
